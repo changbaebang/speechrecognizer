@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     TextView speechResultTextView;
     ArrayList<String> matched_textList;
     private static final int REQ_CODE = 1234;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         matched_textList = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
         String result = "";
         for(int i=0; i<matched_textList.size();i++)
-            result += matched_textList.get(i) + "\r\n";
+            result += "[" + i + "] : " +matched_textList.get(i) + "\r\n";
+
         speechResultTextView.setText(result);
     }
 
