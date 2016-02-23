@@ -65,8 +65,10 @@ public class MainActivity extends AppCompatActivity {
         
         if(netInfo == null)
             return false;
+
         if(netInfo.isAvailable() == false || netInfo.isConnected() == false)
             return false;
+
         return true;
     }
 }
