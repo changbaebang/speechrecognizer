@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="reg_btn">Start Speech</string>
+    <string name="init_msg">Please Speech</string>
+</resources>
